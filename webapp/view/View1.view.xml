@@ -1,0 +1,18 @@
+<mvc:View controllerName="customcontrol.controller.View1"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:wt="customcontrol.control">
+	<Page
+		title="{i18n>detailPageTitle}"
+		showNavButton="true"
+		navButtonPress=".onNavBack">
+		<ObjectHeader
+			intro="{invoice>ShipperName}"
+			title="{invoice>ProductName}"/>
+		<wt:Rating 
+			id="rating" 
+            labelRI="Label Of Product"
+			class="sapUiSmallMarginBeginEnd" 
+			change=".onRatingChange"/>
+	</Page>
+</mvc:View>
