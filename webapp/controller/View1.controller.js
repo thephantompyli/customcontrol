@@ -8,7 +8,7 @@ sap.ui.define([
         },
         onAfterRendering(oEvent) {
 			this.byId("rating").reset();
-			
+			a="";//trial revert
 		},
         onRatingChange(oEvent) {
 			const fValue = oEvent.getParameter("value");
